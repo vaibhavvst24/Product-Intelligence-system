@@ -16,6 +16,8 @@ To address these challenges, this project implements a Product Intelligence Syst
 A Generative Adversarial Network (GAN) for synthetic image generation.
 A fine-tuned Large Language Model (LLM) for customer sentiment intelligence.
 
+---
+
 ## 2. Business Mapping
 
 The system supports real-world business applications:
@@ -34,6 +36,8 @@ Review summarization support
 
 Together, these components form a scalable AI-powered product intelligence framework.
 
+---
+
 ## 3. Dataset Choices
 
 Image Dataset
@@ -49,6 +53,8 @@ Binary sentiment classification
 Balanced dataset (positive/negative)
 Ideal for transformer fine-tuning demonstration
 Datasets were downloaded using HuggingFace and exported locally to ensure reproducibility.
+
+---
 
 ## 4. GAN Architecture Design
 
@@ -72,6 +78,8 @@ Optimizer: Adam (lr = 0.0002, β1 = 0.5)
 Epochs: 50
 Loss: Binary Cross Entropy
 Label smoothing applied (real = 0.9)
+
+---
 
 ## 5. LLM Fine-Tuning Strategy
 
@@ -97,6 +105,8 @@ Epochs: 3
 Batch size: 16
 Weight decay: 0.01
 
+---
+
 ## 6. Training Results
 
 GAN Results
@@ -119,6 +129,8 @@ ROUGE-L improved significantly
 
 Fine-tuning demonstrated strong domain adaptation and task-specific learning.
 
+---
+
 ## 7. Evaluation Metrics
 
 GAN Evaluation
@@ -136,6 +148,8 @@ Validation per epoch
 Before vs After comparison
 
 Both quantitative and qualitative metrics were used to validate performance.
+
+---
 
 # Sample Outputs
 
@@ -160,6 +174,8 @@ System Design & Modularity
 
 The system was packaged into reusable modules:
 
+---
+
 ## Inputs
 
 Image dataset
@@ -169,12 +185,16 @@ GAN training module
 LLM fine-tuning module
 Inference module
 
+---
+
 ## Outputs
 
 Synthetic images
 Trained GAN model
 Fine-tuned DistilBERT model
 Sentiment prediction outputs
+
+---
 
 ## Limitations & Improvements
 
@@ -197,6 +217,8 @@ Binary sentiment only
 No domain-specific product vocabulary adaptation
 No parameter-efficient fine-tuning (e.g., LoRA)
 
+---
+
 # Conclusion
 
 This project demonstrates:
@@ -207,3 +229,4 @@ Modular engineering design
 Production-oriented inference pipeline
 
 The implemented Product Intelligence System provides a scalable foundation for synthetic asset generation and automated customer insight analysis in digital commerce environments.
+---
